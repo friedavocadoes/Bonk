@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0D7C1;
+  }
+  
+  /* navbar-css */
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #5F4C41;
+  }
+
+  nav .container h1 {
+    font-family: Lexend Deca,sans-serif;
+    font-size: xx-large;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    color: #c18c7e;
+  }
+  
+  #content {
+    height: 2000px; /* Just for demonstration purposes */
+  }
+  
+  /* Modify navbar on scroll */
+  .navbar-scrolled {
+    transition: all 0.5s ease-out;
+    background-color: #2d2d2d;
+  }
+  
+  /* transition for text hover */
+  .hover-grow {
+    transition: all 0.4s;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  
+  .hover-grow:hover {
+    color : #E7B38F
+  }
