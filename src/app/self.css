@@ -1,8 +1,13 @@
+@import "theme.css";
+@import "fonts.css";
+
+
 body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
-    background-color: #E0D7C1;
+    background-color: var(--color-bg);
+    transition: background-color 0.3s ease-in;
   }
   
   /* navbar-css */
@@ -21,14 +26,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    color: #5F4C41;
   }
 
   nav .container h1 {
-    font-family: Lexend Deca,sans-serif;
+    font-family: "Lexend Deca",sans-serif;
     font-size: xx-large;
   }
+
+  nav .container a {
+    text-decoration: none;
+    font-family: "Lexend Deca", sans-serif;
+  }
   
+  .title {
+    font-weight: 550;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: xx-large;
+    color: var(--color-title);
+  }
+
   nav ul {
     list-style: none;
     margin: 0;
@@ -51,6 +67,15 @@ body {
     color: #c18c7e;
   }
   
+  .if-container {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  #switch-container{position:relative;float:left;}
+  #overlay{top:0;left:0;width:100%;height:100%;position:absolute;}
+
   #content {
     height: 2000px; /* Just for demonstration purposes */
   }
@@ -58,7 +83,15 @@ body {
   /* Modify navbar on scroll */
   .navbar-scrolled {
     transition: all 0.5s ease-out;
-    background-color: #2d2d2d;
+    background-color: var(--color-fg);
+  }
+
+  .title-scrolled {
+    color : var(--color-t1);
+  }
+
+  #nav-button {
+
   }
   
   /* transition for text hover */
@@ -68,5 +101,5 @@ body {
   }
   
   .hover-grow:hover {
-    color : #E7B38F
+    color : var(--color-t1)
   }

@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LumberGumber</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- css -->
     <link rel="stylesheet" href="src/app/self.css">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="src/dynamics/navscroll.js"></script>
-
+    <script src="src/app/theme.js"></script>
     
 </head>
 <body>
     <nav id="navbar">
-        <div class="container">
-            <h1>LumberGumber</h1>
-            <ul>
-                <li><a href="#home">Theme</a></li>
-            </ul>
+        <div class="container hover-grow">
+            <a href="index.html" id="titler" class="hover-grow title">LumberGumber</a>
+                <!-- <button id="nav-button" onclick="watermelon()">THEME</button> -->
+                <div id="watermelon">
+                    <iframe src="src/app/switch/theme-switch.html" frameborder="0" height="60px" ></iframe>    
+                </div>
+                
+                
         </div>
     </nav>
-
+    
     <div id="content"> </div>
-
+    
 </body>
 </html>
 
