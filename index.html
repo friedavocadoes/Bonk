@@ -12,29 +12,44 @@
 
     <!-- css -->
     <link rel="stylesheet" href="src/app/self.css">
+    <link rel="stylesheet" href="src/app/switch.css">
 
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="src/dynamics/navscroll.js"></script>
-    <script src="src/app/theme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
     
 </head>
 <body>
     <nav id="navbar">
-        <div class="container hover-grow">
-            <a href="index.html" id="titler" class="hover-grow title">LumberGumber</a>
-                <!-- <button id="nav-button" onclick="watermelon()">THEME</button> -->
-                <div id="watermelon">
-                    <iframe src="src/app/switch/theme-switch.html" frameborder="0" height="60px" ></iframe>    
+        <div class="container">
+            <a href="index.html" id="titler" class="hover-grow title">lumber-gumber</a>
+            
+            <div class="right-elements">
+                <!-- dark/light switch -->
+                <div class="toggle-switch">
+                    <input type="checkbox" id="mode-switch" onclick="themer()">
+                    <label for="mode-switch">
+                    <div class="slider hover-grow">L</div>
+                    </label>
                 </div>
-                
-                
+
+                <!-- login -->
+                <div class="login">
+                    <a href="" >LOGIN</a>
+                </div>
+            </div>
+
+
         </div>
     </nav>
     
     <div id="content"> </div>
     
 </body>
+<script src="src/dynamics/theme.js"></script>
 </html>
 
 <!-- light mode #e0d7c1 -->

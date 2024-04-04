@@ -43,6 +43,9 @@ body {
     font-family: "Lexend Deca", sans-serif;
     font-size: xx-large;
     color: var(--color-title);
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   nav ul {
@@ -90,13 +93,21 @@ body {
     color : var(--color-t1);
   }
 
-  #nav-button {
-
+  .right-elements {
+    display:flex;
+    align-items: center;
   }
+  
+  .login a {
+    margin-left: 40px;
+    margin-right: 100px;
+  }
+
+
   
   /* transition for text hover */
   .hover-grow {
-    transition: all 0.4s;
+    transition: color 0.2s ease-in;
     font-family: Arial, Helvetica, sans-serif ;
   }
   
