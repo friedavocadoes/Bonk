@@ -1,4 +1,4 @@
-@import "theme.css";
+@import "../assets/theme.css";
 
 .toggle-switch {
 	position: relative;
