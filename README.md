@@ -7,8 +7,6 @@ npm run dev
 ```
 
 
-
-
 ## Required Dependencies
 
 >[!NOTE]
@@ -18,4 +16,7 @@ npm run dev
 npm i express mongoose ejs bootstrap body-parser
 ```
 
+- [MongoDB](https://www.mongodb.com/docs/manual/installation/)
+- [NodeJS](https://nodejs.org/en/download)
+- 
 
