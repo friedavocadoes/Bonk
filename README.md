@@ -1,10 +1,18 @@
 # Hi ^_^
 
-**clone** or download **pre-release** *(on the right)* and run development server:
+- **Step 1:**
+  **clone** repo:
+  ```
+  git clone https://github.com/friedavocadoes/LumberGumber/
+  ```
+  or
+  download **pre-release** *(on the right)*
 
-```
-npm run dev
-```
+- **Step 2:**
+  run development server:
+  ```
+  npm run dev
+  ```
 
 
 ## Required Dependencies
