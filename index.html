@@ -21,8 +21,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/app/login/log-form.js"></script>
     
-    
-    
 </head>
 <body>
     <nav id="navbar">
@@ -30,6 +28,7 @@
             <a href="index.html" id="titler" class="hover-grow title">lumber-gumber</a>
             
             <div class="right-elements">
+
                 <!-- dark/light switch -->
                 <div class="toggle-switch">
                     <input type="checkbox" id="mode-switch" onclick="themer()">
@@ -40,7 +39,7 @@
 
                 <!-- login -->
                 <div class="login">
-                    <a href="#" onclick="opener()">LOGIN</a>
+                    <a href="#" onclick="opener()"><button id="main-login">LOGIN</button></a>
                     <div id="modal-wrapper" class="modal">
   
                         <form class="modal-content animate">
@@ -54,11 +53,12 @@
                           </div>
                       
                           <div class="cont">
-                            <input type="text" placeholder="Enter Username" name="uname">
-                            <input type="password" placeholder="Enter Password" name="psw">        
-                            <button type="submit">Login</button>
+                            <input type="text" placeholder="Username" name="uname">
+                            <input type="password" placeholder="Password" name="psw">        
+                            <button type="submit" class="login-but">Login</button>                            
                             <!-- <input type="checkbox" style="margin:26px 30px;"> Remember me       -->
                             <a href="#" class="pwd-txt">Forgot Password ?</a>
+                            
                           </div>
                           
                         </form>
@@ -68,6 +68,7 @@
             </div>
         </div>
     </nav>
+    
     
     <div id="content"> </div>
     

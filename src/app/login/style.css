@@ -17,8 +17,8 @@ input[type=text], input[type=password] {
     background-color: var(--color-bg);
     color: var(--color-t2);
 }
-/* Set a style for all buttons */
-button {
+/* Set a style login button */
+.login-but {
     background-color: var(--color-title);
     color: var(--color-bg);
     padding: 14px 20px;
@@ -68,7 +68,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: ;
 }
-
+/* text that says "Login Page" */
 .tit-text {
     text-align:center;
     color: var(--color-title);
@@ -76,13 +76,14 @@ button:hover {
     margin-top: 20px;
 
 }
-
-/*  */
+/* text below the Login Button */
 .pwd-txt {
     text-decoration:none; 
+    align-self: center;
     float:right; 
     text-align: center;
-    margin-right:70px; 
+    margin-left: 70px;
+    margin-right:50px; 
     margin-top:26px;
     color: var(--color-t1);
 }
