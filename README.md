@@ -1,5 +1,7 @@
 # Hi ^_^
 
+### Follow the steps to view:
+
 1. `clone` repo:
   ```
   git clone https://github.com/friedavocadoes/LumberGumber/
