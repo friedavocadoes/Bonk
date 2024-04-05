@@ -15,6 +15,7 @@
    ```
 
    >[!NOTE]
+   >hello hello
    >If you downloaded `zip`, then extract->open folder->open a terminal window in the directory.
    
   >[!TIP]
