@@ -1,6 +1,6 @@
 # Hi ^_^
 
-### Follow the steps to view:
+### Follow the steps to open:
 
 1. `clone` repo:
   ```
