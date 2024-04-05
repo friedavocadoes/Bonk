@@ -9,7 +9,17 @@
   >[!TIP]
   > or download latest `pre-release` *(on the right)*
 
-2. Run development server:
+2. Open `LumberGumber`:
+   ```
+   cd LumberGumber
+   ```
+   >[!NOTE]
+   >If you downloaded `zip`, then extract->open folder->open a terminal window in the directory.
+   
+  >[!TIP]
+>As an alternative to terminal, it is recommended to open the directory in [VScode](https://code.visualstudio.com/download).
+
+3. Run development server:
   ```
   npm run dev
   ```
