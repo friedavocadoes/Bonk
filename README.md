@@ -1,15 +1,13 @@
 # Hi ^_^
 
-- **Step 1:**
-**clone** repo:
+1. **clone** repo:
   ```
   git clone https://github.com/friedavocadoes/LumberGumber/
   ```
   or
   download **pre-release** *(on the right)*
 
-- **Step 2:**
-run development server:
+2. run development server:
   ```
   npm run dev
   ```
