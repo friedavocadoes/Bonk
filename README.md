@@ -1,7 +1,7 @@
 # Hi ^_^
 
 - **Step 1:**
-  \n**clone** repo:
+**clone** repo:
   ```
   git clone https://github.com/friedavocadoes/LumberGumber/
   ```
@@ -9,7 +9,7 @@
   download **pre-release** *(on the right)*
 
 - **Step 2:**
-  \nrun development server:
+run development server:
   ```
   npm run dev
   ```
