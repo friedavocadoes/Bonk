@@ -1,4 +1,4 @@
-#Hi ^_^
+# Hi ^_^
 
 clone or download pre-release (on the right) and run development server:
 
