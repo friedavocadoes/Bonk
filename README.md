@@ -7,8 +7,11 @@ npm run dev
 ```
 
 
+
+
 ## Required Dependencies
 
+>[!NOTE]
 > node_modules are not **ignored**, can skip module installation.
 > For updation :
 ```
