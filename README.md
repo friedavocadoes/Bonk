@@ -1,13 +1,13 @@
 # Hi ^_^
 
-1. **clone** repo:
+1. `clone` repo:
   ```
   git clone https://github.com/friedavocadoes/LumberGumber/
   ```
   >[!TIP]
   > or download **pre-release** *(on the right)*
 
-2. run development server:
+2. Run development server:
   ```
   npm run dev
   ```
