@@ -16,6 +16,7 @@
    
   >[!NOTE]
   >If you downloaded `zip`, then extract->open folder->open a terminal window in the directory.
+  >[!NOTE]
   >As an alternative to terminal, it is recommended to open the directory in [VScode](https://code.visualstudio.com/download).
 
 3. Run development server:
