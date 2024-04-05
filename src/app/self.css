@@ -88,7 +88,7 @@ body {
     transition: all 0.5s ease-out;
     background-color: var(--color-fg);
   }
-
+  /* change color of title after scroll(js) */
   .title-scrolled {
     color : var(--color-t1);
   }
@@ -103,7 +103,21 @@ body {
     margin-right: 100px;
   }
 
-
+  /* the login button on the right */
+  #main-login {
+    background-color: var(--color-title);
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--color-bg);
+    padding: 9px 0px;
+    
+    margin: 0px 1px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    width: 50%;
+	  font-size:14px;
+    border-radius: 9px;
+  }
   
   /* transition for text hover */
   .hover-grow {
