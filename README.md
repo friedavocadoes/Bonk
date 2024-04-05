@@ -6,3 +6,13 @@
 npm run dev
 ```
 
+
+## Required Dependencies
+
+> node_modules are not **ignored**, can skip module installation.
+> For updation :
+```
+npm i express mongoose ejs bootstrap body-parser
+```
+
+
