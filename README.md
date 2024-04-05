@@ -5,7 +5,7 @@
   git clone https://github.com/friedavocadoes/LumberGumber/
   ```
   or
-  download **pre-release** *(on the right)*
+    download **pre-release** *(on the right)*
 
 2. run development server:
   ```
