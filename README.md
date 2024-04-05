@@ -13,9 +13,8 @@
    ```
    cd LumberGumber
    ```
-
    
-  >[!TIP]
+  >[!NOTE]
   >As an alternative to terminal, it is recommended to open the directory in [VScode](https://code.visualstudio.com/download).
 
 3. Run development server:
