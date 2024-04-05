@@ -1,10 +1,27 @@
 # Hi ^_^
 
-**clone** or download **pre-release** *(on the right)* and run development server:
+### Follow the steps to open:
 
-```
-npm run dev
-```
+1. `clone` repo:
+  ```
+  git clone https://github.com/friedavocadoes/LumberGumber/
+  ```
+  >[!TIP]
+  > or download latest `pre-release` *(on the right)*
+
+2. Open `LumberGumber`:
+   ```
+   cd LumberGumber
+   ```
+   
+  >[!NOTE]
+  >If you downloaded `zip`, then extract → open folder → open a terminal window in the directory.<br>
+  >*As an alternative to terminal, it is recommended to open the directory in [VScode](https://code.visualstudio.com/download).*
+
+3. Run development server:
+  ```
+  npm run dev
+  ```
 
 
 ## Required Dependencies
@@ -20,3 +37,6 @@ npm i express mongoose ejs bootstrap body-parser
 - [NodeJS](https://nodejs.org/en/download)
 
 ### Push requests and issues are appreciated :)
+
+>[!CAUTION]
+>Do not clone `testonly` branch.
