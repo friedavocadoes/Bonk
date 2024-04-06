@@ -2,8 +2,8 @@
 @import "../assets/fonts.css";
 
 
-body {
-    
+  body {
+    display: flex ;
     margin: 0;
     padding: 0;
     background-color: var(--color-bg);
@@ -11,7 +11,6 @@ body {
   }
   
   /* navbar-css */
-  
   nav {
     position: fixed;
     top: 0;
@@ -38,6 +37,7 @@ body {
     font-family: "Lexend Deca", sans-serif;
   }
   
+  /* text on top of navbar */
   .title {
     font-weight: 550;
     font-family: "Lexend Deca", sans-serif;
@@ -46,28 +46,6 @@ body {
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-    color: #c18c7e;
   }
   
   .if-container {
@@ -93,11 +71,13 @@ body {
     color : var(--color-t1);
   }
 
+  /* everything on the right side of navbar */
   .right-elements {
     display:flex;
     align-items: center;
   }
   
+  /* the login ref */
   .login a {
     margin-left: 40px;
     margin-right: 100px;
@@ -109,7 +89,6 @@ body {
     font-family: "Lexend Deca", sans-serif;
     color: var(--color-bg);
     padding: 9px 0px;
-    
     margin: 0px 1px;
     border: none;
     cursor: pointer;
@@ -117,6 +96,67 @@ body {
     width: 50%;
 	  font-size:14px;
     border-radius: 9px;
+  }
+
+  /* how everything is displayed in the body */
+  #body-container {
+    align-content: center;
+    margin: 0px 500px;
+    /* margin-top: 100px; */
+    /* align-items: center; */
+  }
+
+  /* for big text and darker color */
+  .body-title {
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: "Space Mono", monospace;
+    font-size: xx-large;
+    color: var(--color-t2);
+  }
+
+  /* for medium sized text and dark color */
+  .body-t-med {
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: "Space Mono", monospace;
+    font-size: x-large;
+    color: var(--color-t2);
+  }
+
+  /* for small text and lighter color */
+  .body-t-small {
+    text-align: center;
+    margin: 0px;
+    font-family: "Space Mono", monospace;
+    font-size: x-small;
+    color: var(--color-t1);
+  }
+
+  /* sign up page submit button */
+  .div-center {
+    background-color: var(--color-t1);
+    font-family: monospace;
+    color: var(--color-bg);
+    padding: 9px 0px;
+    margin: 10px 1px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+	  font-size: 14px;
+  }
+
+  /* sign up page input fields */
+  input {
+    background-color: var(--color-title);
+    font-family: monospace;
+    color: var(--color-bg);
+    /* padding: 9px 0px; */
+    /* border: 0.1px; */
+    cursor: pointer;
+    align-items: center;
+	  font-size: 14px;
   }
   
   /* transition for text hover */

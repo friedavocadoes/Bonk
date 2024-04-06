@@ -1,16 +1,28 @@
 
-<h1> Sign up form </h1>
+	<%- include('header') %>
 
-<form action="/register" method="POST">
-	<input type="text" name="username"
-		placeholder="username">
-	<input type="password" name="password"
-		placeholder="password">
-	<button>Submit</button>
-</form>
+    <!-- include the navbar view -->
+    <%- include('navbar') %>
+	
+	<div id="body-container">
+		<div class="body-title">Sign-Up</div>
+		<br>
+		<div class="body-t-small">kekw</div>
 
-<h1>This is home page</h1>
+		<form action="/register" method="POST">
+			<input class="inp" type="text" name="name"
+				placeholder="nickname">
+			<input class="inp" type="text" name="username"
+				placeholder="username">
+			<input class="inp" type="password" name="password"
+				placeholder="password">
+			<button class="div-center">Go Dawg</button>
+		</form>
+	</div>
+	<script>
+		window.onload = function () {
+			document.getElementById("main-login").style.display = "none";
+		}
+	</script>
 
-<li><a href="/register">Sign up!!</a></li>
-<li><a href="/login">Login</a></li>
-<li><a href="/logout">Logout</a></li>
+	<%- include('footer') %>

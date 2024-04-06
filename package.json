@@ -17,7 +17,7 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon -L --watch views server.js",
     "start": "nodemon server.js"
   },
   "name": "frontend",

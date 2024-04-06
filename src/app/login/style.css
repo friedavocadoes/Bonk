@@ -2,7 +2,7 @@
 @import "/./src/assets/fonts.css";
 
 
-*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+*{margin:0px; padding:0px; font-family:monospace;}
 /* Full-width input fields */
 input[type=text], input[type=password] {
     align-content: center;
@@ -16,8 +16,10 @@ input[type=text], input[type=password] {
     border-radius: 10px;
     background-color: var(--color-bg);
     color: var(--color-t2);
+    font-family: monospace;
 }
-/* Set a style login button */
+
+/* login button */
 .login-but {
     background-color: var(--color-title);
     color: var(--color-bg);
@@ -30,6 +32,7 @@ input[type=text], input[type=password] {
     width: 80%;
 	font-size:20px;
     border-radius: 25px;
+    font-family: monospace;
 }
 button:hover {
     opacity: 0.8;
@@ -57,6 +60,7 @@ button:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.752);
+    font-family: monospace;
 }
 /* Modal Content Box */
 .modal-content {
@@ -66,7 +70,7 @@ button:hover {
     width: 40%; 
 	padding-bottom: 30px;
     border-radius: 10px;
-    box-shadow: ;
+    font-family: monospace;
 }
 /* text that says "Login Page" */
 .tit-text {
@@ -74,7 +78,7 @@ button:hover {
     color: var(--color-title);
     margin-bottom: 60px;
     margin-top: 20px;
-
+    font-family: monospace;
 }
 /* text below the Login Button */
 .pwd-txt {
