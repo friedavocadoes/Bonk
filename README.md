@@ -10,9 +10,9 @@
   > or download latest `pre-release` *(on the right)*
 
 2. Open `LumberGumber`:
-   ```
-   cd LumberGumber
-   ```
+  ```
+  cd LumberGumber
+  ```
    
   >[!NOTE]
   >If you downloaded `zip`, then extract → open folder → open a terminal window in the directory.<br>
@@ -26,13 +26,11 @@
 
 ## Required Dependencies
 
->[!NOTE]
-> node_modules are not **ignored**, can skip module installation.
-> For updation :
-```
-npm i express mongoose ejs bootstrap body-parser
-```
+Since **package.json** is included, use `npm i` in root directory to install all node dependencies at once.
 
+<br>
+Others<br>    
+  
 - [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 - [NodeJS](https://nodejs.org/en/download)
 
