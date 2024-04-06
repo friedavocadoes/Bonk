@@ -148,15 +148,19 @@
   }
 
   /* sign up page input fields */
-  input {
+  .inp {
     background-color: var(--color-title);
     font-family: monospace;
     color: var(--color-bg);
-    /* padding: 9px 0px; */
-    /* border: 0.1px; */
-    cursor: pointer;
+    padding: 9px 0px;
     align-items: center;
 	  font-size: 14px;
+    left: 20px;
+  }
+
+  .inp:focus {
+    background-color: var(--color-fg);
+    color: var(--color-bg);
   }
   
   /* transition for text hover */
