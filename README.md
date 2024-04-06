@@ -26,8 +26,10 @@
 
 ## Required Dependencies
 
-Since  is included, use `npm i` in root directory to install all node dependencies at once.
+Since **package.json** is included, use `npm i` in root directory to install all node dependencies at once.
 
+<br>
+Others:
 - [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 - [NodeJS](https://nodejs.org/en/download)
 
