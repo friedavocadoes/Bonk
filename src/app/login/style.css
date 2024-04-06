@@ -30,7 +30,7 @@
     background-color: var(--color-t1);
     color: var(--color-bg);
     padding: 14px 20px;
-    margin: 0px 49px;
+    margin: auto 49px;
     margin-top: 20px;
     border: none;
     cursor: pointer;

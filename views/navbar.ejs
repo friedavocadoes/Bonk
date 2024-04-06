@@ -1,45 +1,42 @@
 <nav id="navbar">
-    <div class="container">
-        <a href="index.html" id="titler" class="hover-grow title">lumber-gumber</a>
-        
-        <div class="right-elements">
+  <div class="container">
+      <a href="index.html" id="titler" class="hover-grow title">lumber-gumber</a>
 
-            <!-- dark/light switch -->
-            <div class="toggle-switch">
-                <input type="checkbox" id="mode-switch" onclick="themer()">
-                <label for="mode-switch">
-                <div class="slider hover-grow">L</div>
-                </label>
-            </div>
+      <div class="right-elements">
 
-            <!-- login -->
-            <div class="login">
-                <a href="#" onclick="opener()"><button id="main-login">LOGIN</button></a>
-                <div id="modal-wrapper" class="modal">
+          <!-- dark/light switch -->
+          <div class="toggle-switch">
+              <input type="checkbox" id="mode-switch" onclick="themer()">
+              <label for="mode-switch">
+                  <div class="slider hover-grow">L</div>
+              </label>
+          </div>
 
-                    <form class="modal-content animate" action="/login" method="POST">
-                          
+          <!-- login -->
+          <div class="login">
+              <a href="#" onclick="opener()"><button id="main-login">LOGIN</button></a>
+              <div id="modal-wrapper" class="modal">
+
+                  <form class="modal-content animate" action="/login" method="POST">
+
                       <div class="imgcontainer">
-                        <span 
-                        onclick="document.getElementById('modal-wrapper').style.display='none'" 
-                        class="close" title="Close PopUp">&times;</span>
-                        <!-- <img src="" alt="Avatar" class="avatar">   add your picture link -->
-                        <h1 class="tit-text" style="font-family: monospace;">Login Page</h1>
+                          <span onclick="document.getElementById('modal-wrapper').style.display='none'"
+                              class="close" title="Close PopUp">&times;</span>
+                          <div class="tit-text">Login Page</div>
                       </div>
-                  
+
                       <div class="cont">
-                        <input type="text" placeholder="Username" name="username">
-                        <input type="password" placeholder="Password" name="password">        
-                        <button type="submit" class="login-but">Login</button>                            
-                        <!-- <input type="checkbox" style="margin:26px 30px;"> Remember me       -->
-                        <a href="/register" class="pwd-txt">Forgot Password ?</a>
-                        
+                          <input class="inpflogin" type="text" placeholder="Username" name="username" required>
+                          <input class="inpflogin" type="password" placeholder="Password" name="password"
+                              required>
+                          <button type="submit" class="login-but">Login</button>
+
                       </div>
-                      
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+
+                  </form>
+
+              </div>
+          </div>
+      </div>
+  </div>
 </nav>

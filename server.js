@@ -8,6 +8,7 @@ const app = express();
 const path = require('path');
 const port = 3000;
 const User = require("./model/user");
+const { register } = require('module');
 
 //connect to mongodb server (edit if necessary)
 mongoose.connect("mongodb://localhost:27017/finder"); //this is the default local server link-auto creates finder db
@@ -81,13 +82,13 @@ app.post("/login", async function(req, res){
 		if (result) {
 			res.render("secret");
 		} else {
-			res.status(400).json({ error: "password doesn't match" });
+			res.render("index", { errmsg: "Wrong password" });
 		}
 		} else {
-		res.status(400).json({ error: "User doesn't exist" });
+			res.render("index", { errmsg: "Username doesnt exist!" });
 		}
 	} catch (error) {
-		res.status(400).json({ error });
+		res.status(400).send({ error });
 	}
 });
 
