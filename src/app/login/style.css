@@ -15,14 +15,19 @@
     box-sizing: border-box;
 	font-size:16px;
     border-radius: 10px;
-    background-color: var(--color-bg);
+    background-color: var(--color-title);
     color: var(--color-t2);
     font-family: monospace;
 }
 
+.inpflogin:focus {
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+}
+
 /* login button */
 .login-but {
-    background-color: var(--color-title);
+    background-color: var(--color-t1);
     color: var(--color-bg);
     padding: 14px 20px;
     margin: 0px 49px;
@@ -32,7 +37,7 @@
     align-items: center;
     width: 80%;
 	font-size:20px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-family: monospace;
 }
 button:hover {
@@ -76,10 +81,12 @@ button:hover {
 /* text that says "Login Page" */
 .tit-text {
     text-align:center;
+    font-size: xx-large;
     color: var(--color-title);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-top: 20px;
     font-family: monospace;
+    font-weight: 500;
 }
 /* text below the Login Button */
 .pwd-txt {

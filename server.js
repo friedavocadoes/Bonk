@@ -60,7 +60,8 @@ app.post("/register", async (req, res) => {
 
         // If username is unique, create a new user
         const user = await User.create({
-            username: req.body.username,
+            nickname: req.body.nickname,
+			username: req.body.username,
             password: req.body.password
         });
         res.redirect('/');
