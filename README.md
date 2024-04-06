@@ -55,7 +55,15 @@ Others<br>
    By default MongoDB uses `mongodb://localhost:27017` so make sure its that and then click **Connect**.
 
 <br>
+
+###Good to go, now the Login and SignUp works!
+
+>[!TIP]
+>Try Signing Up and watch the **db model** being updated as you sign up.
+
 <br>
+<br>
+
 
 ### Push requests and issues are appreciated :)
 
