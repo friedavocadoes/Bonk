@@ -10,9 +10,9 @@
   > or download latest `pre-release` *(on the right)*
 
 2. Open `LumberGumber`:
-   ```
-   cd LumberGumber
-   ```
+  ```
+  cd LumberGumber
+  ```
    
   >[!NOTE]
   >If you downloaded `zip`, then extract → open folder → open a terminal window in the directory.<br>
