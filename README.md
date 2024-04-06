@@ -26,12 +26,7 @@
 
 ## Required Dependencies
 
->[!NOTE]
-> node_modules are not **ignored**, can skip module installation.
-> For updation :
-```
-npm i express mongoose ejs bootstrap body-parser
-```
+Since  is included, use `npm i` in root directory to install all node dependencies at once.
 
 - [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 - [NodeJS](https://nodejs.org/en/download)
