@@ -34,6 +34,13 @@ Others<br>
 - [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 - [NodeJS](https://nodejs.org/en/download)
 
+
+## Setting up MongoDB
+
+1. Firstly, download [MongoDB](https://www.mongodb.com/docs/manual/installation/)
+>[!TIP]
+>I would recommend following [this GFG page](https://www.geeksforgeeks.org/how-to-install-mongodb-on-windows/) for proper installation and setup.
+2. 
 ### Push requests and issues are appreciated :)
 
 >[!CAUTION]
