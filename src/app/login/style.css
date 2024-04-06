@@ -4,7 +4,8 @@
 
 *{margin:0px; padding:0px; font-family:monospace;}
 /* Full-width input fields */
-input[type=text], input[type=password] {
+/* input[type=text], input[type=password] { */
+.inpflogin {
     align-content: center;
     width: 81%;
     padding: 12px 20px;
