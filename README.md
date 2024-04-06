@@ -56,7 +56,7 @@ Others<br>
 
 <br>
 
-### Good to go, now the Login and SignUp works!
+### Good to go, now Login and SignUp works!
 
 >[!TIP]
 >Try Signing Up and watch the **db model** being updated as you sign up.
