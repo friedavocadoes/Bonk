@@ -40,8 +40,10 @@ Others<br>
 1. Download [MongoDB](https://www.mongodb.com/docs/manual/installation/)
 >[!TIP]
 >I would recommend following [this GFG page](https://www.geeksforgeeks.org/how-to-install-mongodb-on-windows/) for proper installation and setup.
+<br>
 2. Open **MongoDBCompass**
->
+<br>
+3. On the splashscreen, you will see **New Connection** and a URI below it.<br>By default MongoDB uses `mongodb://localhost:27017` so make sure its that and then click **Connect**.
 ### Push requests and issues are appreciated :)
 
 >[!CAUTION]
