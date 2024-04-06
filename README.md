@@ -59,7 +59,7 @@ Others<br>
 ### Good to go, now Login and SignUp works!
 
 >[!TIP]
->Try Signing Up and watch the **db model** being updated as you sign up.
+>Try Signing Up and watch the **db model** `finder` being updated as you sign up.
 
 <br>
 <br>
