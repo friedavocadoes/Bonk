@@ -49,7 +49,10 @@ Others<br>
 <br>
 
 
-3. On the splashscreen, you will see **New Connection** and a URI below it.<br>By default MongoDB uses `mongodb://localhost:27017` so make sure its that and then click **Connect**.
+3. On the splashscreen, you will see **New Connection** and a URI below it.
+   <br>
+   <br>
+   By default MongoDB uses `mongodb://localhost:27017` so make sure its that and then click **Connect**.
 ### Push requests and issues are appreciated :)
 
 >[!CAUTION]
