@@ -1,0 +1,20 @@
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+  }
+  
+  [data-theme="light"] {
+    --color-bg: #E0D7C1;
+    --color-title: #5F4C41;
+    --color-t1: #E7B28E;
+    --color-t2: #DD7A5F;
+    --color-fg: #292929;
+  }
+  
+  [data-theme="dark"] {
+    --color-bg: #292929;
+    --color-title: #FECEA8;
+    --color-t2: #616161;
+    --color-t1: #99B898;
+    --color-fg: #56534b;
+  }
