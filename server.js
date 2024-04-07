@@ -56,7 +56,8 @@ app.post("/register", async (req, res) => {
         // Check if the username already exists
         const existingUser = await User.findOne({ username: req.body.username });
         if (existingUser) {
-            return res.status(400).json({ error: "Username already exists" });
+            res.render("registererr", {errmsg: "User already exists"});
+			return;
         }
 
         // If username is unique, create a new user
@@ -80,7 +81,7 @@ app.post("/login", async function(req, res){
 		//check if password matches
 		const result = req.body.password === user.password;
 		if (result) {
-			res.render("secret");
+			res.render("secret", {uname: `hello, ${user.nickname}`});
 		} else {
 			res.render("index", { errmsg: "Wrong password" });
 		}
