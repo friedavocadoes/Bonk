@@ -1,6 +1,10 @@
 
   var cTS = document.querySelector("html").getAttribute("data-theme");
+  var cbox = document.getElementById("mode-switch").checked;
 
+  if (cbox) {
+    themer();
+  }
 
   function themer () {
     const newTheme = cTS === "dark" ? "light" : "dark";

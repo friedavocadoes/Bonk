@@ -58,15 +58,16 @@ app.post("/register", async (req, res) => {
         if (existingUser) {
             res.render("registererr", {errmsg: "User already exists"});
 			return;
-        }
-
-        // If username is unique, create a new user
-        const user = await User.create({
-            nickname: req.body.nickname,
-			username: req.body.username,
-            password: req.body.password
-        });
-        res.redirect('/');
+        } else {
+			// If username is unique, create a new user
+			const user = await User.create({
+				nickname: req.body.nickname,
+				username: req.body.username,
+				password: req.body.password
+			});
+		
+			res.redirect('/');
+		}
     } catch (error) {
         res.status(500).json({ error: "Internal server error" });
     }
