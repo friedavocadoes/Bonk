@@ -65,7 +65,6 @@ Others<br>
 <br>
 
 
-### Push requests and issues are appreciated :)
 
 >[!CAUTION]
 >Do not clone `testonly` branch.
