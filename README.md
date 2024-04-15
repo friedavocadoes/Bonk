@@ -62,10 +62,8 @@ Others<br>
 >Try Signing Up and watch the **db model** `finder` being updated as you sign up.
 
 <br>
-<br>
 
 
-### Push requests and issues are appreciated :)
 
 >[!CAUTION]
 >Do not clone `testonly` branch.
