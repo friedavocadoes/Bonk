@@ -1,5 +1,4 @@
 # bonk!
-## dead end?
 
 ### Follow the steps to open:
 
