@@ -4,14 +4,14 @@
 
 1. `clone` repo:
   ```
-  git clone https://github.com/friedavocadoes/LumberGumber/
+  git clone https://github.com/friedavocadoes/Bonk/
   ```
   >[!TIP]
   > or download latest `pre-release` *(on the right)*
 
-2. Open `LumberGumber`:
+2. Open `Bonk`:
   ```
-  cd LumberGumber
+  cd Bonk
   ```
    
   >[!NOTE]
