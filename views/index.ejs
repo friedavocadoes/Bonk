@@ -1,8 +1,52 @@
     <%- include('header') %>
     
-    <%- include('navbar') %>
-    
-    
-    <div id="content"> </div>
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" id="titler" class="hover-grow title">bonk!</a>
+      
+            <div class="right-elements">
+      
+                <!-- dark/light switch -->
+                <div class="toggle-switch">
+                    <input type="checkbox" id="mode-switch" onclick="themer()" checked>
+                    <label for="mode-switch">
+                        <div class="slider hover-grow">L</div>
+                    </label>
+                </div>
+      
+                <!-- login -->
+                <div class="login">
+                    <a href="#" onclick="opener()"><button id="main-login">LOGIN</button></a>
+                    <div id="modal-wrapper" class="modal" style="display: block;">
+      
+                        <form class="modal-content" action="/login" method="POST">
+      
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('modal-wrapper').style.display='none'"
+                                    class="close" title="Close PopUp">&times;</span>
+                                <div class="tit-text">Login Page</div>
+                            </div>
+      
+                            <div class="cont">
+                                <input class="inpflogin" type="text" placeholder="Username" name="username" required>
+                                <input class="inpflogin" type="password" placeholder="Password" name="password"
+                                    required>
+                                  <div id="errmsg" style="margin: 0px auto; text-align: center; color: var(--color-t2);"><%= errmsg %></div>
+                                <button type="submit" class="login-but">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+      <div id="body-container">
+        <a href="/register" style="text-decoration: none;">
+            <div class="body-title" style="margin: 350px 40px; color: var(--color-t1); font-size: x-large;">Sign Up
+            </div>
+        </a>
+
+    </div>
     
     <%- include('footer') %>

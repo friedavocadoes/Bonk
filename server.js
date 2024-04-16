@@ -8,6 +8,7 @@ const app = express();
 const path = require('path');
 const port = 3000;
 const User = require("./model/user");
+const { register } = require('module');
 
 //connect to mongodb server (edit if necessary)
 mongoose.connect("mongodb://localhost:27017/finder"); //this is the default local server link-auto creates finder db
@@ -55,15 +56,18 @@ app.post("/register", async (req, res) => {
         // Check if the username already exists
         const existingUser = await User.findOne({ username: req.body.username });
         if (existingUser) {
-            return res.status(400).json({ error: "Username already exists" });
-        }
-
-        // If username is unique, create a new user
-        const user = await User.create({
-            username: req.body.username,
-            password: req.body.password
-        });
-        res.redirect('/');
+            res.render("registererr", {errmsg: "User already exists"});
+			return;
+        } else {
+			// If username is unique, create a new user
+			const user = await User.create({
+				nickname: req.body.nickname,
+				username: req.body.username,
+				password: req.body.password
+			});
+		
+			res.redirect('/');
+		}
     } catch (error) {
         res.status(500).json({ error: "Internal server error" });
     }
@@ -78,15 +82,15 @@ app.post("/login", async function(req, res){
 		//check if password matches
 		const result = req.body.password === user.password;
 		if (result) {
-			res.render("secret");
+			res.render("secret", {uname: `hello, ${user.nickname}`});
 		} else {
-			res.status(400).json({ error: "password doesn't match" });
+			res.render("index", { errmsg: "Wrong password" });
 		}
 		} else {
-		res.status(400).json({ error: "User doesn't exist" });
+			res.render("index", { errmsg: "Username doesnt exist!" });
 		}
 	} catch (error) {
-		res.status(400).json({ error });
+		res.status(400).send({ error });
 	}
 });
 
@@ -104,5 +108,5 @@ function isLoggedIn(req, res, next) {
 }
 
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`);
+  console.log(`Running on port http://localhost:${port}`);
 });

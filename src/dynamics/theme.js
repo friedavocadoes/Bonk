@@ -1,7 +1,14 @@
 
-  var currentThemeSetting = document.querySelector("html").getAttribute("data-theme");
+  var cTS = document.querySelector("html").getAttribute("data-theme");
+  var cbox = document.getElementById("mode-switch").checked;
+
+  if (cbox) {
+    themer();
+  }
+
   function themer () {
-    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+    const newTheme = cTS === "dark" ? "light" : "dark";
+
     var peep = "";
     if (newTheme == "dark") {
       peep="D";
@@ -16,7 +23,8 @@
     // update in local storage
     localStorage.setItem("theme", newTheme);
 
-    // update the currentThemeSetting in memory
-    currentThemeSetting = newTheme;
+    // update the cTS in memory
+    cTS = newTheme;
 
   }
+
