@@ -108,5 +108,5 @@ function isLoggedIn(req, res, next) {
 }
 
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`);
+  console.log(`Running on port http://localhost:${port}`);
 });
