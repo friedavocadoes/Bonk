@@ -6,18 +6,23 @@
 /* Full-width input fields */
 /* input[type=text], input[type=password] { */
 .inpflogin {
-    align-content: center;
-    width: 81%;
+    position:relative;
+    /* 81 */
+    width: 70%;
     padding: 12px 20px;
-    margin: 8px 49px;
-    display: inline-block;
+    
     border: 1px solid #ccc;
     box-sizing: border-box;
 	font-size:16px;
-    border-radius: 10px;
+    border-radius: 1px;
     background-color: var(--color-title);
     color: var(--color-t2);
     font-family: monospace;
+    margin: 1% 15%;
+}
+
+.inpflogin::placeholder {
+    text-align: center;
 }
 
 .inpflogin:focus {
@@ -30,14 +35,14 @@
     background-color: var(--color-t1);
     color: var(--color-bg);
     padding: 14px 20px;
-    margin: auto 49px;
+    margin: auto 20%;
     margin-top: 20px;
     border: none;
     cursor: pointer;
     align-items: center;
-    width: 80%;
+    width: 60%;
 	font-size:20px;
-    border-radius: 15px;
+    border-radius: 1px;
     font-family: monospace;
 }
 button:hover {
@@ -46,8 +51,7 @@ button:hover {
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
+    /* margin: 24px 0 12px 0; */
     padding-top: 20px;
 }
 .avatar {
@@ -67,16 +71,25 @@ button:hover {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.752);
     font-family: monospace;
+    align-content: center;
+    align-items: center;
 }
 /* Modal Content Box */
 .modal-content {
+    display:flex;  
+    flex-direction: column;
     background-color: var(--color-bg);
     margin: 4% auto 15% auto;
-    border: 1px solid #888;
-    width: 40%; 
+    border: 0px solid #888;
+    width: 40%;
+    height: 60%;
 	padding-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 1px;
     font-family: monospace;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 /* text that says "Login Page" */
 .tit-text {
