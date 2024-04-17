@@ -103,8 +103,15 @@ button:hover {
 .pwd-txt:hover {
     color: var(--color-t2);
 }
-
-
+/* text that asks to create an account */
+.atext {
+    text-decoration: none;
+    font-family:monospace;
+    text-align: center;
+    margin: 2% auto;
+    color: var(--color-title);
+    font-size: small;
+}
 /* The Close Button (x) */
 .close {
     position: absolute;
@@ -122,6 +129,7 @@ button:hover {
 .animate {
     animation: zoom 0.3s
 }
+
 @keyframes zoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}

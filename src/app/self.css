@@ -86,17 +86,28 @@
   /* the login button on the right */
   #main-login {
     background-color: var(--color-title);
-    font-family: "Lexend Deca", sans-serif;
+    font-family:monospace;
     color: var(--color-bg);
     padding: 9px 0px;
-    margin: 0px 1px;
     border: none;
     cursor: pointer;
     align-items: center;
-    width: 50%;
-	  font-size:14px;
-    border-radius: 9px;
+    width: 100px;
+	  font-size:15px;
+    border-radius: 1px;
     font-weight: 700;
+  }
+
+  /* custom changes to sign-up page only*/
+  #body-container-signup {
+    transform: scale(1.2);
+    position:relative;
+    display:block;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10% auto;
   }
 
   /* how everything is displayed in the body */
@@ -108,7 +119,6 @@
     justify-content: center;
     justify-items: center;
     margin: 10% auto;
-
   }
 
   /* for big text and darker color */
