@@ -1,5 +1,9 @@
 
-  var cTS = document.querySelector("html").getAttribute("data-theme");
+const storedPreference = localStorage.getItem('preferredMode');
+
+var cTS = document.querySelector("html").getAttribute("data-theme");
+const prefersDarkMode = storedPreference === 'dark' || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  
   var cbox = document.getElementById("mode-switch").checked;
 
   if (cbox) {
@@ -7,6 +11,8 @@
   }
 
   function themer () {
+    localStorage.setItem('preferredMode', cTS);
+
     const newTheme = cTS === "dark" ? "light" : "dark";
 
     var peep = "";

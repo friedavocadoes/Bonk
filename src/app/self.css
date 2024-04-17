@@ -3,11 +3,13 @@
 
 
   body {
-    display: flex ;
+    display:flex;
     margin: 0;
     padding: 0;
     background-color: var(--color-bg);
     transition: background-color 0.3s ease-in;
+    align-items: center ;
+    align-content: center;
   }
   
   /* navbar-css */
@@ -18,6 +20,7 @@
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
+    
   }
   
   nav .container {
@@ -57,9 +60,6 @@
   #switch-container{position:relative;float:left;}
   #overlay{top:0;left:0;width:100%;height:100%;position:absolute;}
 
-  #content {
-    height: 2000px; /* Just for demonstration purposes */
-  }
   
   /* Modify navbar on scroll */
   .navbar-scrolled {
@@ -101,11 +101,14 @@
 
   /* how everything is displayed in the body */
   #body-container {
-    transform: scale(1.3);
+    position:relative;
     display:block;
     align-content: center;
     align-items: center;
-    margin: 0px auto;
+    justify-content: center;
+    justify-items: center;
+    margin: 10% auto;
+
   }
 
   /* for big text and darker color */
@@ -115,14 +118,17 @@
     font-family: "Space Mono", monospace;
     font-size: xx-large;
     color: var(--color-t2);
+    
   }
 
   /* for medium sized text and dark color */
   .body-t-med {
+    align-self: center;
     text-align: center;
     margin-bottom: 0px;
     font-family: "Space Mono", monospace;
-    font-size: x-large;
+    font-size: 130%;
+    margin: auto 18%;
     color: var(--color-t2);
   }
 
