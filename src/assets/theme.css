@@ -8,6 +8,7 @@
     --color-title: #5F4C41;
     --color-t1: #E7B28E;
     --color-t2: #DD7A5F;
+    --color-err: #C74C3C;
     --color-fg: #292929;
   }
   
@@ -16,5 +17,6 @@
     --color-title: #FECEA8;
     --color-t2: #616161;
     --color-t1: #99B898;
+    --color-err: #B30000;
     --color-fg: #56534b;
   }
