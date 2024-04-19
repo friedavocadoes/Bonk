@@ -2,7 +2,8 @@
 const express = require('express'),
       mongoose = require('mongoose'),
       bodyParser = require('body-parser'),
-      esesh = require("express-session");
+      esesh = require("express-session"),
+	  bcrypt = require('bcrypt');
 
 const app = express();
 const path = require('path');
@@ -59,11 +60,13 @@ app.post("/register", async (req, res) => {
             res.render("registererr", {errmsg: "User already exists"});
 			return;
         } else {
+			//hash the password with 12 salts
+			var hashpwd = await bcrypt.hash(req.body.password, 12);
 			// If username is unique, create a new user
 			const user = await User.create({
 				nickname: req.body.nickname,
 				username: req.body.username,
-				password: req.body.password
+				password: hashpwd
 			});
 		
 			res.redirect('/');
@@ -80,7 +83,7 @@ app.post("/login", async function(req, res){
 		const user = await User.findOne({ username: req.body.username });
 		if (user) {
 		//check if password matches
-		const result = req.body.password === user.password;
+		const result = await bcrypt.compare(req.body.password, user.password);
 		if (result) {
 			res.render("secret", {uname: `hello, ${user.nickname}`});
 		} else {
