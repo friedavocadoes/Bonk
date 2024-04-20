@@ -20,7 +20,7 @@
 
 3. Install dependencies:
   ```
-   npm i
+  npm i
   ```
   
 5. Run development server:
