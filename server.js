@@ -2,7 +2,7 @@
 const express = require('express'),
       mongoose = require('mongoose'),
       bodyParser = require('body-parser'),
-      esesh = require("express-session"),
+      session = require("express-session"),
 	  bcrypt = require('bcrypt');
 
 const app = express();
@@ -19,13 +19,11 @@ app.set("view engine", "ejs");
 //use body parser for easy return of elements
 app.use(bodyParser.urlencoded({ extended: true }));
 //express session
-app.use(esesh({
+app.use(session({
 	secret: "Rusty is a dog", //unique string
 	resave: false,
 	saveUninitialized: false
 }));
-
-
 
 
 // Serve static files from the current directory
