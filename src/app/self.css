@@ -113,7 +113,6 @@
   /* how everything is displayed in the body */
   #body-container {
     position:relative;
-    display:block;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -138,7 +137,9 @@
     margin-bottom: 0px;
     font-family: "Space Mono", monospace;
     font-size: 130%;
-    margin: auto 18%;
+    width: 52%;
+    margin: auto auto;
+    /* margin-top: 2%; */
     color: var(--color-t2);
   }
 
@@ -149,6 +150,25 @@
     font-family: "Space Mono", monospace;
     font-size: x-small;
     color: var(--color-t1);
+  }
+
+  .rec-button {
+    background-color: var(--color-t1);
+    width: 30%;
+    height: 70px;
+    font-size: 2rem;
+    color: var(--color-fg);
+    cursor: pointer ;
+    border: 0px;
+    border-radius: 2px;
+  }
+
+  .rec-container {
+    
+    align-self: center;
+    text-align: center;
+    margin: 12px auto;
+    margin-top: 2%;
   }
 
   /* sign up page submit button */
