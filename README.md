@@ -75,4 +75,4 @@ Others<br>
 
 
 >[!NOTE]
->A preview only version can be accessed on [this github page](friedavocadoes.github.io/Bonk/)
+>A preview only version can be accessed on [this github page](https://friedavocadoes.github.io/Bonk/)
