@@ -1,0 +1,32 @@
+<%- include("header") %>
+<%- include("navbar") %>
+
+<div id="body-container" style="display: block;">
+    <div id="uname" style="margin: 0px auto; margin-bottom: 2%;text-align: center; color: var(--color-t1);">1<sup>st</sup> Question</div>
+    <div class="body-t-med" style="text-align: left;">
+        I am a vast and ever-growing network, woven from countless threads of information. I can answer your deepest questions and wildest curiosities, but I hold no inherent knowledge myself. I rely on the collective wisdom of humanity to fill my ever-expanding tapestry. What am I?
+    </div>
+
+    <div>
+        <input type="text" class="answer" placeholder="Your answer goes here">
+    </div>
+    
+        
+</div>
+
+<script>
+    document.title = "bonk! | First";
+    function logout () {
+        window.location.href = "/logout";
+    }
+    window.onload = function () {
+        document.getElementById("main-login").textContent = "LOGOUT";   
+        
+        // document.getElementById("main-login").removeAttribute("onclick");
+        document.getElementById("main-login").onclick = logout;
+        //remove the event which opens that login shit
+    }
+</script>
+
+
+<%- include("footer") %>

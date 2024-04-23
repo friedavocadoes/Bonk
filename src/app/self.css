@@ -136,7 +136,7 @@
     text-align: center;
     margin-bottom: 0px;
     font-family: "Space Mono", monospace;
-    font-size: 130%;
+    font-size: 120%;
     width: 52%;
     margin: auto auto;
     /* margin-top: 2%; */
@@ -211,3 +211,28 @@
   .hover-grow:hover {
     color : var(--color-t1)
   }
+
+
+
+/* the final pages */
+
+.answer {
+  position:absolute;
+  width: 30%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size:16px;
+  border-radius: 1px;
+  background-color: var(--color-title);
+  color: var(--color-t2);
+  font-family: monospace;
+  margin: 0px 35%;
+  margin-top: 3%;
+}
+
+.answer::placeholder {
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 1.5px;
+}

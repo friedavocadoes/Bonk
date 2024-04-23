@@ -57,5 +57,12 @@ router.post("/register", async (req, res) => {
     }
 });
 
+// Logout route
+router.get('/logout', (req, res) => {
+    // Clear the session cookie
+    res.clearCookie('sessionId');
+    res.redirect('/');
+});
+
 module.exports = router;
 

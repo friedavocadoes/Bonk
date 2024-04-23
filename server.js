@@ -34,12 +34,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Logout route
-app.get('/logout', (req, res) => {
-    // Clear the session cookie
-    res.clearCookie('sessionId');
-    res.redirect('/');
-});
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
