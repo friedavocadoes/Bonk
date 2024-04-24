@@ -1,27 +1,74 @@
 // playRoutes.js
 const express = require('express');
+const progress = require('../model/progress');  
 const router = express.Router();
 
-// Secret page route (protected)
-router.get('/secret', (req, res) => {
-    // Check if userId cookie exists
+// Setting up routes for each question and updating progress
+
+// First
+router.get('/qn1', async (req, res) => {
     if (req.cookies.userId) {
-        
-        const user = { nickname: 'John Doe' }; // Sample user data
-        res.render('secret', { uname: `Hello, ${user.nickname}` });
+        await progress.findOneAndUpdate(
+            { username: req.cookies.userId },
+            { $set: { qn:1 } }
+        );
+        res.render('qn1');
     } else {
         res.redirect('/login');
     }
 });
 
-// Question 1 page route (protected)
-router.get('/qn1', (req, res) => {
-    // Check if userId cookie exists
+// Second
+router.get('/qn2', async (req, res) => {
     if (req.cookies.userId) {
-        res.render('qn1'); // Render the question 1 page if user is authenticated
+        await progress.findOneAndUpdate(
+            { username: req.cookies.userId },
+            { $set: { qn:2 } }
+        );
+        res.render('qn2');
     } else {
         res.redirect('/login');
     }
 });
+
+// Third
+router.get('/qn3', async (req, res) => {
+    if (req.cookies.userId) {
+        await progress.findOneAndUpdate(
+            { username: req.cookies.userId },
+            { $set: { qn:3 } }
+        );
+        res.render('qn3');
+    } else {
+        res.redirect('/login');
+    }
+});
+
+// Fourth
+router.get('/qn4', async (req, res) => {
+    if (req.cookies.userId) {
+        await progress.findOneAndUpdate(
+            { username: req.cookies.userId },
+            { $set: { qn:4 } }
+        );
+        res.render('qn4');
+    } else {
+        res.redirect('/login');
+    }
+});
+
+// Fifth
+router.get('/qn5', async (req, res) => {
+    if (req.cookies.userId) {
+        await progress.findOneAndUpdate(
+            { username: req.cookies.userId },
+            { $set: { qn:5 } }
+        );
+        res.render('qn5');
+    } else {
+        res.redirect('/login');
+    }
+});
+
 
 module.exports = router;

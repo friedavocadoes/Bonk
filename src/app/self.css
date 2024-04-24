@@ -227,12 +227,40 @@
   background-color: var(--color-title);
   color: var(--color-t2);
   font-family: monospace;
+  text-align: center;
   margin: 0px 35%;
   margin-top: 3%;
+  transition: border 0.2s;
 }
 
 .answer::placeholder {
   text-transform: lowercase;
   text-align: center;
   letter-spacing: 1.5px;
+}
+
+.ans-but {
+  position: absolute;
+  width: 10%;
+  height: 21%;
+  margin: 0px 45%;
+  margin-top: 8.5rem;
+  background-color: var(--color-t1);
+  border: 0px;
+  cursor: pointer;
+  font-family: monospace;
+  color: var(--color-fg);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size:13px;
+}
+
+.answer:hover {
+  opacity: 0.9;
+}
+
+.answer:focus {
+  opacity: 0.9;
+  outline: none;
+  border: 1.5px solid var(--color-err);
 }

@@ -2,9 +2,9 @@
 <%- include("navbar") %>
 
 <div id="body-container" style="display: block;">
-    <div id="uname" style="margin: 0px auto; margin-bottom: 2%;text-align: center; color: var(--color-t1);">1<sup>st</sup> Question</div>
+    <div id="uname" style="margin: 0px auto; margin-bottom: 2%;text-align: center; color: var(--color-t1);">4<sup>th</sup> Question</div>
     <div class="body-t-med" style="text-align: left;">
-        I am a vast and ever-growing network, woven from countless threads of information. I can answer your deepest questions and wildest curiosities, but I hold no inherent knowledge myself. I rely on the collective wisdom of humanity to fill my ever-expanding tapestry. What am I?
+        I am a canvas on which dreams and nightmares take shape. I can ignite laughter and tears, spark awe and provoke fear. Though I have no voice, I speak volumes to those willing to listen. What am I?
     </div>
 
     <div>
@@ -19,7 +19,7 @@
 </div>
 
 <script>
-    document.title = "bonk! | First";
+    document.title = "bonk! | Fourth";
     function logout () {
         window.location.href = "/logout";
     }
@@ -42,8 +42,8 @@
     function check () {
         var answer = document.getElementById('answered').value;
         console.log(answer);
-        if (answer == "internet") {
-            window.location.href = '/qn2';
+        if (answer == "story") {
+            window.location.href = '/qn5';
         } else {
             document.getElementById('answered').value = "";
         }
