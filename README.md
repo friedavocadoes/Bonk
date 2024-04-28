@@ -7,7 +7,7 @@
   git clone https://github.com/friedavocadoes/Bonk/
   ```
   >[!TIP]
-  > or download latest `pre-release` *(on the right)*
+  > or download latest `release` *(on the right)*
 
 2. Open `Bonk`:
   ```
