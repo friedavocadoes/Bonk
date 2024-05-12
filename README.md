@@ -73,6 +73,3 @@ Others<br>
 >[!CAUTION]
 >Do not clone `testonly` branch.
 
-
->[!NOTE]
->A preview only version can be accessed on [this github page](https://friedavocadoes.github.io/Bonk/)
