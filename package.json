@@ -9,7 +9,7 @@
     "express": "^4.19.2",
     "livereload": "^0.9.3",
     "mongodb": "^6.5.0",
-    "mongoose": "^8.3.0"
+    "mongoose": "^8.9.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
